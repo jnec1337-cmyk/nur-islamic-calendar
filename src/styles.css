@@ -1,0 +1,196 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Manrope", "Amiri", "Segoe UI", sans-serif;
+  --font-arabic: "Amiri", "Noto Naskh Arabic", serif;
+  --font-display: "Aref Ruqaa", "Amiri", serif;
+  --shadow-card: 0 18px 40px -28px rgb(11 38 28 / 0.65);
+}
+
+:root {
+  --bg: #f3ead3;
+  --surface: #fffdf7;
+  --fg: #12261c;
+  --muted: #5c6d63;
+  --header: #0b3d2e;
+  --header-fg: #f4ebd0;
+  --gold: #c9a227;
+  --gold-ink: #7a6210;
+  --line: #e4d6b4;
+  --chip: #f7f1e3;
+  --danger: #8d3b34;
+  --btn: #0b3d2e;
+  --on-btn: #f4ebd0;
+  --mark: #146b43;
+  --forbid: #9b3d36;
+  color-scheme: light;
+}
+
+.dark {
+  --bg: #0a1210;
+  --surface: #13261e;
+  --fg: #f4ebd0;
+  --muted: #b7c4ba;
+  --header: #071610;
+  --header-fg: #f4ebd0;
+  --gold: #d4b44a;
+  --gold-ink: #e2c56a;
+  --line: #24382e;
+  --chip: #0e1c16;
+  --danger: #f0a8a2;
+  --btn: #c9a227;
+  --on-btn: #102018;
+  --mark: #7dceab;
+  --forbid: #f0a8a2;
+  color-scheme: dark;
+}
+
+@theme inline {
+  --color-canvas: var(--bg);
+  --color-card: var(--surface);
+  --color-ink: var(--fg);
+  --color-soft: var(--muted);
+  --color-header: var(--header);
+  --color-onheader: var(--header-fg);
+  --color-gold: var(--gold);
+  --color-goldink: var(--gold-ink);
+  --color-line: var(--line);
+  --color-chip: var(--chip);
+  --color-danger: var(--danger);
+  --color-btn: var(--btn);
+  --color-onbtn: var(--on-btn);
+  --color-mark: var(--mark);
+  --color-forbid: var(--forbid);
+  --color-night: #0a1210;
+  --color-emerald: #0b3d2e;
+  --color-cream: #f4ebd0;
+}
+
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  html,
+  body {
+    height: 100%;
+  }
+
+  body {
+    margin: 0;
+    background: #0a1210;
+    color: var(--fg);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    background: color-mix(in srgb, var(--gold) 35%, transparent);
+  }
+}
+
+.safe-bottom {
+  padding-bottom: max(0.35rem, env(safe-area-inset-bottom));
+}
+
+.rise {
+  animation: nur-rise 240ms ease-out;
+}
+
+@keyframes nur-rise {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rise {
+    animation: none;
+  }
+}
+
+.qibla-disc {
+  fill: #c5ddd2;
+}
+
+.dark .qibla-disc {
+  fill: #12362c;
+}
+
+.qibla-glow {
+  fill: #c9a227;
+  fill-opacity: 0.16;
+}
+
+.qibla-limb {
+  fill: none;
+  stroke: #e7d7a2;
+  stroke-width: 1.4;
+}
+
+.dark .qibla-limb {
+  stroke: #d4b44a;
+}
+
+.qibla-grid {
+  fill: none;
+  stroke: #0b3d2e;
+  stroke-opacity: 0.16;
+  stroke-width: 0.6;
+  vector-effect: non-scaling-stroke;
+}
+
+.dark .qibla-grid {
+  stroke: #f4ebd0;
+  stroke-opacity: 0.14;
+}
+
+.qibla-land {
+  fill: #146047;
+  stroke: #f3e6bf;
+  stroke-width: 0.8;
+  vector-effect: non-scaling-stroke;
+}
+
+.dark .qibla-land {
+  fill: #1d6b50;
+  stroke: #d4b44a;
+}
+
+.qibla-band {
+  fill: none;
+  stroke: #c9a227;
+  stroke-opacity: 0.38;
+  stroke-width: 18px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
+}
+
+.qibla-line {
+  fill: none;
+  stroke: #c9a227;
+  stroke-width: 3.5px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
+}
+
+.qibla-chev {
+  fill: none;
+  stroke: #5c4710;
+  stroke-width: 2.4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.dark .qibla-chev {
+  stroke: #f4ebd0;
+}

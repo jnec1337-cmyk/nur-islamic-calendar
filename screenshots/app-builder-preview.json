@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Нур — исламский календарь",
+      "hasCanvas": false,
+      "bodyTextLen": 119,
+      "bodyTextHash": "f7f1efefd5fb73e119f5cf0733fe5d5122d2054a57613eace92a1026a93c37d7",
+      "bodyTextPrefix": "РУ ع EN Знай день по хиджре и по сунне Два праздника, дни поста ",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Нур — исламский календарь",
+      "hasCanvas": false,
+      "bodyTextLen": 119,
+      "bodyTextHash": "f7f1efefd5fb73e119f5cf0733fe5d5122d2054a57613eace92a1026a93c37d7",
+      "bodyTextPrefix": "РУ ع EN Знай день по хиджре и по сунне Два праздника, дни поста ",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}

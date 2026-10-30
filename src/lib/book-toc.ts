@@ -1,0 +1,102 @@
+export type BookChapter = {
+  title: string;
+  page: number;
+};
+
+/** Printed pages of «Нахдж аль-асма» match the PDF page numbers. */
+export const BOOK_CHAPTERS: BookChapter[] = [
+  { title: "Обложка", page: 1 },
+  { title: "Содержание", page: 4 },
+  { title: "Предисловие автора к книге", page: 9 },
+  { title: "Достоинства знания и изучения имён Аллаха", page: 16 },
+  { title: "Мазхаб ахлюс-сунна в отношении имён и атрибутов", page: 26 },
+  { title: "Ар-Рахман, Ар-Рахим", page: 31 },
+  { title: "Аль-Малик, Аль-Маалик, Аль-Малиик", page: 52 },
+  { title: "Аль-Куддус", page: 68 },
+  { title: "Ас-Салям", page: 77 },
+  { title: "Аль-Мумин", page: 87 },
+  { title: "Аль-Азиз", page: 103 },
+  { title: "Аль-Джаббар", page: 113 },
+  { title: "Аль-Гафир, Аль-Гафуур и Аль-Гаффар", page: 163 },
+  { title: "Аль-Ваххаб", page: 174 },
+  { title: "Ар-Раззак, Ар-Разик", page: 186 },
+  { title: "Аль-Фаттах", page: 206 },
+  { title: "Аль-Алим, Аль-Аалим, Аль-Аллам", page: 220 },
+  { title: "Ас-Сами", page: 237 },
+  { title: "Аль-Басыр", page: 249 },
+  { title: "Аль-Хакам, Аль-Хаким и Аль-Хакиим", page: 258 },
+  { title: "Аль-Латыф", page: 287 },
+  { title: "Аль-Хабир", page: 297 },
+  { title: "Аль-Халим", page: 307 },
+  { title: "Аль-Азым", page: 319 },
+  { title: "Аш-Шакур, Аш-Шакир", page: 330 },
+  { title: "Аль-Алий, Аль-Аля, Аль-Мутааль", page: 376 },
+  { title: "Аль-Хафиз", page: 397 },
+  { title: "Аль-Мукыт", page: 421 },
+  { title: "Аль-Хасиб", page: 428 },
+  { title: "Аль-Карим", page: 440 },
+  { title: "Ар-Ракыб", page: 460 },
+  { title: "Аль-Васи", page: 471 },
+  { title: "Ар-Рабб", page: 482 },
+  { title: "Аль-Вадуд", page: 496 },
+  { title: "Аш-Шахид", page: 506 },
+  { title: "Аль-Хакк", page: 524 },
+  { title: "Аль-Маджид", page: 537 },
+  { title: "Аль-Мубин", page: 546 },
+  { title: "Аль-Вакиль и Аль-Кяфиль", page: 555 },
+  { title: "Аль-Кавий, Аль-Матин", page: 569 },
+  { title: "Аль-Вали и Аль-Мауля", page: 581 },
+  { title: "Аль-Хамид", page: 598 },
+  { title: "Аль-Хайй", page: 612 },
+  { title: "Аль-Каййум", page: 620 },
+  { title: "Аль-Вахид, Аль-Ахад", page: 631 },
+  { title: "Ас-Самад", page: 649 },
+  { title: "Аль-Кадир, Аль-Кадиир, Аль-Муктадир", page: 662 },
+  { title: "Аль-Авваль и Аль-Ахыр", page: 679 },
+  { title: "Аль-Ахыр", page: 685 },
+  { title: "Аль-Барр", page: 687 },
+  { title: "Ат-Тавваб", page: 700 },
+  { title: "Аль-Афувв", page: 731 },
+  { title: "Ар-Рауф", page: 743 },
+  { title: "Зуль-Джаляли валь-Икрам", page: 754 },
+  { title: "Аль-Ганий", page: 762 },
+  { title: "Аль-Хадий", page: 779 },
+  { title: "Аль-Бади", page: 800 },
+  { title: "Аль-Варис", page: 807 },
+  { title: "Аль-Мухит", page: 816 },
+  { title: "Аль-Фатыр", page: 824 },
+  { title: "Ан-Насыр, часть 1", page: 832 },
+  { title: "Ан-Насыр, продолжение", page: 846 },
+  { title: "Аль-Мустаан", page: 852 },
+  { title: "Зуль-Мааридж", page: 868 },
+  { title: "Зут-Тауль", page: 872 },
+  { title: "Зуль-Фадль", page: 876 },
+  { title: "Аль-Галиб", page: 886 },
+  { title: "Аль-Кяфий", page: 890 },
+  { title: "Ар-Рафик", page: 895 },
+  { title: "Ас-Суббух", page: 903 },
+  { title: "Аш-Шафий", page: 910 },
+  { title: "Ат-Таййиб", page: 917 },
+  { title: "Аль-Джамиль", page: 928 },
+  { title: "Аль-Витр", page: 942 },
+  { title: "Аль-Мукаддиму, Аль-Муаххыру", page: 948 },
+  { title: "Ад-Дайян", page: 962 },
+  { title: "Аль-Ханнан", page: 972 },
+  { title: "Аль-Маннан", page: 978 },
+  { title: "Аль-Хайий", page: 996 },
+  { title: "Ас-Ситтир", page: 1011 },
+  { title: "Аль-Кабид, Аль-Басит", page: 1019 },
+  { title: "Ас-Саййид", page: 1046 },
+  { title: "Аль-Мухсин", page: 1053 },
+];
+
+export const BOOK_PAGES = 1068;
+
+export function chapterAt(page: number): BookChapter {
+  let current = BOOK_CHAPTERS[0]!;
+  for (const item of BOOK_CHAPTERS) {
+    if (item.page <= page) current = item;
+    else break;
+  }
+  return current;
+}
